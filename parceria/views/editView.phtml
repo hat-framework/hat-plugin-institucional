@@ -1,0 +1,8 @@
+<?php
+$opt = array('class' => 'span12 widget');
+$this->gui->opendiv('parceiros', 'span12');
+        classes\Component\widget::executeWidgets(array(
+
+            'institucional/parceria/widgets/editParceirosWidget' => $opt,
+        ));
+    $this->gui->closediv();

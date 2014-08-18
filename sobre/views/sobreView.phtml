@@ -1,0 +1,14 @@
+<div id='institucional'>
+<?php 
+if(isset($institucional) && !empty ($institucional)){
+    foreach($institucional as $inst){
+        extract($inst);
+        echo "<div class='conteudo'><h2>$titulo</h2> <div class='inst-conteudo'>$conteudo</div></div> <br/>";
+    }
+}
+else{
+    echo "Nenhuma informação cadastrada";
+}
+
+?>
+</div>
